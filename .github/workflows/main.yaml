@@ -6,7 +6,7 @@ on:
 jobs:
   echo-variable-job:
     runs-on: ubuntu-latest
-    environment: ${{ vars.ENVIRONMENT_STAGE }}
+    environment: Development
     steps:
       - name: Echo test variable
         run: |
