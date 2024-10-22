@@ -6,9 +6,9 @@ on:
 jobs:
   echo-variable-job:
     runs-on: ubuntu-latest
-    environment: dev1
+    environment: Dev1
     steps:
       - name: Echo test variable
         run: |
           echo "The value of ENVRUNNER is: ${{ vars.ENVRUNNER }}"
-          echo "The value of ENVRUNNER is: ${{ vars.AWSSECRETSENVIRONMENT }}"
+          echo "The value of AWSSECRETSENVIRONMENT is: ${{ vars.AWSSECRETSENVIRONMENT }}"
