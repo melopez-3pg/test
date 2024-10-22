@@ -10,4 +10,4 @@ jobs:
     steps:
       - name: Echo test variable
         run: |
-          echo "The value of test is: ${{ env.TEST1 }}"
+          echo "The value of test is: ${{ vars.TEST1 }}"
