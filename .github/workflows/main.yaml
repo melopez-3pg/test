@@ -6,8 +6,8 @@ on:
 jobs:
   echo-variable-job:
     runs-on: ubuntu-latest
-
+    environment: ${{ vars.ENVIRONMENT_STAGE }}
     steps:
       - name: Echo test variable
         run: |
-          echo "The value of test is: ${{ vars.TEST1 }}"
+          echo "The value of test is: ${{ env.TEST1 }}"
